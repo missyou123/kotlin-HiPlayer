@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px145" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/music_icon_animation"
+        android:layout_width="@dimen/px68"
+        android:layout_height="@dimen/px68"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px40"
+        android:layout_marginTop="@dimen/px35"
+        android:src="@drawable/music_icon_animation" />
+</RelativeLayout>

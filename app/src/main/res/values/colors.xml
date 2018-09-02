@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="inActiveTabColor">#C8C8C8</color>
+    <color name="activeTabColor">#CB4D40</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorMusicBlack">#323334</color>
+    <color name="colorAppGray">#929394</color>
+    <color name="colorSongName">#4c4b4c</color>
+    <color name="colorSeekBg">#3F3E3E</color>
+    <color name="colorSeekProgress">#C3473A</color>
+
+    <color name="colorLyricBig">#FFFFFF</color>
+    <color name="colorLyricNormal">#7D7C7D</color>
+    <color name="colorTransparent">#00000000</color>
+</resources>

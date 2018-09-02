@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/px14"
+    android:layout_marginRight="@dimen/px30"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/px158"
+        android:layout_height="@dimen/px158">
+        <ImageView
+            android:id="@+id/title_icon"
+            android:layout_width="@dimen/px90"
+            android:layout_height="@dimen/px90"
+            android:src="@mipmap/music_icon_1"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地音乐"
+            android:textSize="@dimen/sp48"
+            android:textColor="@color/colorMusicBlack"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:background="#E3E3E4"
+            android:layout_alignParentBottom="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp35"
+                android:textColor="#9B9B9C"
+                android:layout_marginRight="@dimen/px20"/>
+            <ImageView
+                android:id="@id/right_icon"
+                android:layout_width="@dimen/px40"
+                android:layout_height="@dimen/px40"
+                android:src="@mipmap/icon_cell_rightarrow"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

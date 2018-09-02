@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/song_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px139">
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="@dimen/px139"
+            android:layout_height="@dimen/px139"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/middle_text"
+            android:layout_width="@dimen/px500"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp50" />
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="@dimen/px1"
+            android:layout_height="@dimen/px1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px40" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/px80"
+        android:layout_marginTop="@dimen/px80"
+        android:layout_weight="1">
+
+        <cn.zk.hi.widget.LyricView
+            android:id="@+id/lyricView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/center_line_controller"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px55"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px15"
+            android:layout_marginRight="@dimen/px15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/center_line_play"
+                android:layout_width="@dimen/px40"
+                android:layout_height="@dimen/px40"
+                android:layout_marginRight="@dimen/px20"
+                android:src="@mipmap/icon_lyric_play" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/px2"
+                android:layout_weight="1"
+                android:background="@color/colorAppGray"/>
+
+            <TextView
+                android:id="@+id/selected_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px10"
+                android:text="00:00"
+                android:textColor="@color/colorAppGray"
+                android:textSize="@dimen/sp35" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/player_controller"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px304"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px60"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px32"
+                android:layout_marginRight="@dimen/px32"
+                android:text="00:00"
+                android:textColor="@color/colorAppGray"
+                android:textSize="@dimen/sp35" />
+
+            <SeekBar
+                android:id="@+id/progress_sk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="@dimen/px7"
+                android:minHeight="@dimen/px7"
+                android:progressDrawable="@drawable/song_progress_bg"
+                android:thumb="@mipmap/song_seek_thumb" />
+
+            <TextView
+                android:id="@+id/durtion_tiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px32"
+                android:layout_marginRight="@dimen/px32"
+                android:text="00:00"
+                android:textColor="@color/colorAppGray"
+                android:textSize="@dimen/sp35" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/play_state"
+                android:layout_width="@dimen/px180"
+                android:layout_height="@dimen/px180"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/px40"
+                android:layout_marginRight="@dimen/px40"
+                android:src="@mipmap/icon_play" />
+
+            <ImageView
+                android:id="@+id/play_rewind"
+                android:layout_width="@dimen/px180"
+                android:layout_height="@dimen/px180"
+                android:layout_marginLeft="@dimen/px40"
+                android:layout_toLeftOf="@id/play_state"
+                android:src="@mipmap/icon_rewind" />
+
+            <ImageView
+                android:id="@+id/play_forward"
+                android:layout_width="@dimen/px180"
+                android:layout_height="@dimen/px180"
+                android:layout_marginRight="@dimen/px40"
+                android:layout_toRightOf="@id/play_state"
+                android:src="@mipmap/icon_forword" />
+
+            <ImageView
+                android:id="@+id/play_mode"
+                android:layout_width="@dimen/px180"
+                android:layout_height="@dimen/px180"
+                android:layout_toLeftOf="@id/play_rewind"
+                android:src="@mipmap/icon_mode_1" />
+
+            <ImageView
+                android:id="@+id/play_list"
+                android:layout_width="@dimen/px180"
+                android:layout_height="@dimen/px180"
+                android:layout_toRightOf="@id/play_forward"
+                android:src="@mipmap/icon_list" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

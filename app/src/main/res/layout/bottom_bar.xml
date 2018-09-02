@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E8E8"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/px73"
+            android:layout_height="@dimen/px73"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px15"
+            android:src="@mipmap/icon_favorites" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/px10"
+            android:gravity="center_horizontal"
+            android:text="发现"
+            android:textColor="@color/bottom_text_color_selector"
+            android:textSize="@dimen/sp28" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/px73"
+            android:layout_height="@dimen/px73"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px15"
+            android:src="@mipmap/icon_movie" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/px10"
+            android:gravity="center_horizontal"
+            android:text="视频"
+            android:textColor="@color/bottom_text_color_selector"
+            android:textSize="@dimen/sp28" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/px73"
+            android:layout_height="@dimen/px73"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px15"
+            android:src="@mipmap/icon_music" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/px10"
+            android:gravity="center_horizontal"
+            android:text="音乐"
+            android:textColor="@color/bottom_text_color_selector"
+            android:textSize="@dimen/sp28" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/px73"
+            android:layout_height="@dimen/px73"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px15"
+            android:src="@mipmap/icon_about" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/px10"
+            android:gravity="center_horizontal"
+            android:text="关于"
+            android:textColor="@color/bottom_text_color_selector"
+            android:textSize="@dimen/sp28" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/px73"
+            android:layout_height="@dimen/px73"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px15"
+            android:src="@mipmap/icon_personal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/px10"
+            android:gravity="center_horizontal"
+            android:text="账户"
+            android:textColor="@color/bottom_text_color_selector"
+            android:textSize="@dimen/sp28" />
+    </FrameLayout>
+</LinearLayout>

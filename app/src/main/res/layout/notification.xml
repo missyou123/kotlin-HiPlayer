@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/colorSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/artist"
+            android:textColor="@color/colorAppGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/pre"
+        android:src="@mipmap/note_btn_pre_white"
+        android:layout_width="@dimen/px65"
+        android:layout_height="@dimen/px65" />
+    <ImageView
+        android:id="@+id/state"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/note_btn_pause_white"
+        android:layout_width="@dimen/px95"
+        android:layout_height="@dimen/px95" />
+    <ImageView
+        android:id="@+id/next"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/note_btn_next_white"
+        android:layout_width="@dimen/px65"
+        android:layout_height="@dimen/px65" />
+</LinearLayout>

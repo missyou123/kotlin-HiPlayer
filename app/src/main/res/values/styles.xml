@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="RightInRightOutAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@animator/activity_slide_in_right</item>
+        <item name="android:activityCloseEnterAnimation">@animator/activity_slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@animator/activity_slide_out_left</item>
+        <item name="android:activityCloseExitAnimation">@animator/activity_slide_out_right</item>
+    </style>
+
+    <style name="Animation_RightInRightOutActivity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/RightInRightOutAnim</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TabLayoutTextSize" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/sp40</item>
+    </style>
+
+</resources>

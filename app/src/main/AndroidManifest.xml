@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.MainActivity">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:theme="@style/main_activity_style">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,11 +23,11 @@
         </activity>
         <activity
             android:name=".ui.activity.SongPlayerActivity"
-            android:theme="@style/Animation_RightInRightOutActivity"
-            android:launchMode="singleTask"/>
-        <activity android:name=".ui.activity.PlayerActivity"/>
+            android:launchMode="singleTask"
+            android:theme="@style/Animation_RightInRightOutActivity" />
+        <activity android:name=".ui.activity.PlayerActivity" />
 
-        <service android:name=".service.SongService"/>
+        <service android:name=".service.SongService" />
     </application>
 
 </manifest>

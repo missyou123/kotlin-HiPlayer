@@ -7,8 +7,16 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@drawable/splash</item>
     </style>
+
+    <style name="main_activity_style" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:background">@null</item>
+    </style>
+
 
     <style name="RightInRightOutAnim" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@animator/activity_slide_in_right</item>

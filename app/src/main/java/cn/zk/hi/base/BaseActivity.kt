@@ -1,5 +1,7 @@
 package cn.zk.hi.base
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import cn.zk.hi.utils.DisplayUtils
@@ -33,10 +35,5 @@ abstract class BaseActivity : AppCompatActivity() {
      * 初始化数据 ,子类可以重写
      */
     open fun initData() {
-    }
-	
-	override fun onWindowFocusChanged(hasFocus: Boolean) {
-        super.onWindowFocusChanged(hasFocus)
-        window.setBackgroundDrawable(ColorDrawable(Color.WHITE))
     }
 }

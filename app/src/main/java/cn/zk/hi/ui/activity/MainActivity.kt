@@ -85,10 +85,6 @@ class MainActivity : BaseActivity() {
         }
     }
 
-    override fun onWindowFocusChanged(hasFocus: Boolean) {
-        super.onWindowFocusChanged(hasFocus)
-        window.setBackgroundDrawable(ColorDrawable(Color.WHITE))
-    }
     override fun onResume() {
         super.onResume()
         //判断音乐是否播放， 显示动画

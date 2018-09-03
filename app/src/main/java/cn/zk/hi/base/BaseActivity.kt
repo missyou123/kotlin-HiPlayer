@@ -34,4 +34,9 @@ abstract class BaseActivity : AppCompatActivity() {
      */
     open fun initData() {
     }
+	
+	override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        window.setBackgroundDrawable(ColorDrawable(Color.WHITE))
+    }
 }
